@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_481997_bti3am88ij0v0a4i.css">
+    <script>
+        (function(){
+           /* var calc = function(){
+                var docElement = document.documentElement;
+                var clientWidthValue = docElement.clientWidth > 480 ? 480 : docElement.clientWidth;
+                docElement.style.fontSize = 10*(clientWidthValue/320) + 'px';
+            }
+            calc();*/
+            computed();
+            function computed(){
+                let deviceW=document.documentElement.clientWidth;
+                if(deviceW>640) return;
+                document.documentElement.style.fontSize=deviceW/640*100+'px';
+            }
+           // window.addEventListener('resize',computed);
+        })();
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script src="./bundle.js"></script>
+</body>
+</html>
